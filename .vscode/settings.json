@@ -1,0 +1,10 @@
+{
+    "cypressHelper.cucumberFixtureAutocompleteOnQuotes": true,
+    "cypressHelper.cucumberTagsAutocomplete": {
+        "enable": false,
+        "allurePlugin": false,
+        "tags": [
+            "focus"
+        ]
+    }
+}

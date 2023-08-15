@@ -5,12 +5,12 @@ describe("Check course functionality", ()=>{
     context("Check the functionality as an admin", ()=> {
         
         beforeEach(()=>{
-        Utils.visitPage('login')
-        LoginComponent.performLogin("admin", "admin")
+        Utils.loginWithAPI('admin','admin')
+        Utils.visitPage('courses')
         })
 
         it("check the Delete button should be visible", () => {
-        CourseComponent.courseButton().click()
+        // CourseComponent.courseButton().click()
         CourseComponent.deleteButton().should('be.visible')
         });
     })
